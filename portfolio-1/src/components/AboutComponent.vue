@@ -129,7 +129,7 @@ const ARR_EXPERIENCE = [
           </div>
           <!-- display  -->
           <div
-            class="text-center w-100 absolute top-160 z-[1] text-center sm:scale-[1.20] lg:scale-[1.30] md:scale-[1.05] sm:left-[50px] md:left-[60px] md:top-130 lg:left-[60px] transition-transform-all duration-500">
+            class="text-center w-100 absolute top-320 right-20 z-[1] scale-[0.90] text-center sm:scale-[1.20] lg:scale-[1.30] md:scale-[1.05] sm:left-[50px] sm:top-130 md:left-[60px] md:top-130 lg:left-[60px] transition-transform-all duration-500">
             <Earth />
           </div>
         </div>

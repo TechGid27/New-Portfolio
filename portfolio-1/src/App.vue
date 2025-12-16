@@ -11,10 +11,10 @@ import UnderDeveloped from './components/UnderDeveloped.vue';
 
 <template>
 
-  <div>
+  <div class="overflow-x-hidden">
     <HeaderCom />
     <StContent />
-    <AboutComponent />  
+    <AboutComponent />
     <UnderDeveloped />
   </div>
 
@@ -24,3 +24,4 @@ import UnderDeveloped from './components/UnderDeveloped.vue';
 </template>
 
 <style scoped></style>
+
