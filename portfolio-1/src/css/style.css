@@ -1,2 +1,12 @@
-@import "tailwindcss"
+@import "tailwindcss";
 
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  /* Optional: Offset for your fixed header */
+  section {
+    @apply scroll-mt-24;
+  }
+}

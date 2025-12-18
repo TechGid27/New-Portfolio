@@ -47,7 +47,7 @@ const vReveal = {
 
 <template>
   <section class="relative overflow-hidden">
-    <div class="w-full px-6 md:px-10 py-16 bg-[url('/assets/background-luxury-minimalist-gradient-style-design_698780-702.jpg')] bg-cover bg-center brightness-95">
+    <div id="about" class="w-full px-6 md:px-10 pt-20 pb-16 bg-[url('/assets/background-luxury-minimalist-gradient-style-design_698780-702.jpg')] bg-cover bg-center brightness-95">
       <div v-reveal class="text-center mb-12">
         <h1 class="text-2xl font-bold uppercase tracking-widest text-gray-800">About Me</h1>
       </div>
@@ -112,8 +112,8 @@ const vReveal = {
         </div>
       </div>
 
-      <div class="mt-32 container mx-auto">
-        <div class="flex flex-col lg:flex-row items-center gap-12">
+      <div id="skills" class="pt-32 container mx-auto">
+        <div  class="flex flex-col lg:flex-row items-center gap-12">
           <div class="lg:w-1/2 text-white transition-all duration-1000 delay-[1.5s]" :class="isVisible ? 'opacity-100' : 'opacity-0'">
             <h2 class="text-3xl font-bold mb-6">Technology & Tools</h2>
             <div class="p-8 rounded-3xl bg-white/5 border border-white/10 text-gray-300" v-reveal>

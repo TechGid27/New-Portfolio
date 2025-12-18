@@ -11,7 +11,7 @@ import UnderDeveloped from './components/UnderDeveloped.vue';
 
 <template>
 
-  <div class="overflow-x-hidden">
+  <div class="overflow-x-hidden scroll-smooth">
     <HeaderCom />
     <StContent />
     <AboutComponent />
