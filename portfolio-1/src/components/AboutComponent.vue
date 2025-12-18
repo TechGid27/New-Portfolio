@@ -1,153 +1,158 @@
 <script setup>
+import { ref, onMounted } from 'vue';
 import Earth from "../components/EarthComponent.vue"
 
-const ARR_EXPERIENCE = [
-  [
-    "💻 Full-Stack Developer",
-    "2025 – Present",
-    "Crafting scalable and high-performing web applications with a strong focus on user experience and seamless functionality."
-  ],
-  [
-    "🚀 Git/GitHub WorkShop",
-    "2025",
-    "Participate"
-  ],
-  [
-    "🚀 Hacktoberfest Bootcamp",
-    "2025",
-  ],
-  [
-    "🏆 Web Development Competition",
-    "2025",
-    "Participated in ACLC College’s web development competition, showcasing creativity and technical skills while building a fully functional website that earned second place."
-  ],
-  [
-    "⚙️ Backend Developer",
-    "2024",
-    "Developed and optimized backend systems, ensuring reliability, scalability, and smooth data flow across applications.",
-  ],
-  [
-    "🎨 Frontend Developer",
-    "2022-2023",
-    "Designed and built engaging, responsive user interfaces that deliver intuitive and visually appealing web experiences."
-  ]
+const isVisible = ref(false);
+
+onMounted(() => {
+  isVisible.value = true;
+});
+
+const EXPERIENCES = [
+  { role: "💻 Full-Stack Developer", date: "2025 – Present", desc: "Crafting scalable and high-performing web applications with a strong focus on user experience." },
+  { role: "🚀 Git/GitHub Workshop", date: "2025", desc: "Participant" },
+  { role: "🚀 Hacktoberfest Bootcamp", date: "2025", desc: "Active contributor and participant in open-source workshops." },
+  { role: "🏆 Web Development Competition", date: "2025", desc: "Earned second place at ACLC College, building a fully functional responsive website." },
+  { role: "⚙️ Backend Developer", date: "2024", desc: "Developed and optimized backend systems, ensuring reliability and smooth data flow." },
+  { role: "🎨 Frontend Developer", date: "2022-2023", desc: "Designed and built engaging, responsive user interfaces with a focus on UX/UI." }
 ];
 
+
+const TECH_STACK = [
+  { name: "Vue.js", icon: "https://svgl.app/library/vue.svg" },
+  { name: "JavaScript", icon: "https://svgl.app/library/javascript.svg" },
+  { name: "Laravel", icon: "https://svgl.app/library/laravel.svg" },
+  { name: "PHP", icon: "https://svgl.app/library/php.svg" },
+  { name: "Java", icon: "https://svgl.app/library/java.svg" },
+  { name: "Spring Boot", icon: "https://svgl.app/library/spring.svg" },
+  { name: "MySQL", icon: "https://svgl.app/library/mysql.svg" },
+  { name: "Figma", icon: "https://svgl.app/library/figma.svg" },
+  { name: "Tailwind CSS", icon: "https://svgl.app/library/tailwindcss.svg" }
+];
+
+const vReveal = {
+  mounted: (el) => {
+    el.classList.add('reveal-hidden');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          el.classList.add('reveal-visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    observer.observe(el);
+  }
+};
 </script>
 
-
 <template>
-  <div>
-    <div
-      class="container-full px-10 mx-auto py-10 bg-[url('/assets/background-luxury-minimalist-gradient-style-design_698780-702.jpg')] bg-cover brightness-90">
-      <div class="text-2xl text-center ">
-        <h1 class="font-bold uppercase">about me</h1>
+  <section class="relative overflow-hidden">
+    <div class="w-full px-6 md:px-10 py-16 bg-[url('/assets/background-luxury-minimalist-gradient-style-design_698780-702.jpg')] bg-cover bg-center brightness-95">
+      <div v-reveal class="text-center mb-12">
+        <h1 class="text-2xl font-bold uppercase tracking-widest text-gray-800">About Me</h1>
       </div>
-      <div class="flex flex-col-reverse items-center md:flex-row justify-center gap-16 md:gap-24 mt-10">
-        <div class="group max-w-lg mt-5 p-10 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20
-                      shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-500
-                      hover:scale-[1.04] hover:shadow-[0_12px_40px_rgba(0,0,0,0.18)]">
-          <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight
-                          transition-all duration-300 group-hover:text-gray-950">
-            Gideon Ayao
-          </h1>
-          <p class="mt-3 text-gray-700 text-lg leading-relaxed
-                          transition-colors duration-300 group-hover:text-sky-500">
-            Bachelor of Science in Information Technology
-          </p>
 
-          <span class="mt-1 block text-gray-600 text-sm tracking-wide
-                            transition-colors duration-300 group-hover:text-red-700">
-            Cebu, Philippines
-          </span>
+      <div class="flex flex-col-reverse items-center md:flex-row justify-center gap-12 lg:gap-24">
+        <div v-reveal class="group max-w-lg p-8 md:p-10 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20 shadow-xl transition-all duration-700 hover:scale-[1.02]">
+          <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight transition-colors group-hover:text-black">Gideon Ayao</h1>
+          <p class="mt-3 text-gray-700 text-lg leading-relaxed transition-colors group-hover:text-blue-700">Bachelor of Science in Information Technology</p>
+          <span class="mt-1 block text-gray-600 text-sm font-medium group-hover:text-red-600">Cebu, Philippines</span>
+          <p class="mt-6 text-gray-700 italic leading-relaxed text-[15px]">"I believe that a positive attitude, strong skills, and a commitment to continuous learning are more valuable than the number of years worked."</p>
 
-          <p class="mt-6 text-gray-700 italic leading-relaxed text-[15px]
-                          transition-all duration-300 group-hover:text-blue-600">
-            "I believe that a positive attitude, strong skills, and a commitment
-            to continuous learning are more valuable than the number of years worked."
-          </p>
-
-          <h4 class="mt-8 group-hover:text-red-700 gray-600 font-semibold text-xl tracking-wide">
-            Current Focus
-          </h4>
-
-          <ul class="flex gap-4 mt-3 text-gray-900 font-medium">
-            <li
-              class="px-5 py-2 rounded-2xl bg-white/20 backdrop-blur-md border
-                          transition-all duration-300 group-hover:bg-white/40 bg-linear-to-r from-zinc-600 to-gray-900 group-hover:from-green-600 group-hover:to-orange-100 group-hover:blur-10 text-white">
-              Vue.js
+          <h4 class="mt-8 text-gray-800 font-bold text-xl uppercase tracking-wide group-hover:text-red-700 transition-colors">Current Focus</h4>
+          <ul class="flex gap-4 mt-4">
+            <li class="px-6 py-2 rounded-xl bg-zinc-800 text-white font-medium flex items-center gap-2 transition-all hover:scale-110 group-hover:bg-green-600">
+              <img src="https://cdn.simpleicons.org/vuedotjs/white" class="w-4 h-4" /> Vue.js
             </li>
-
-            <li class="px-5 py-2 rounded-xl bg-white/20 backdrop-blur-md border border-white/30
-                          transition-all duration-300 group-hover:bg-white/40">
-              Laravel
+            <li class="px-6 py-2 rounded-xl bg-white/20 border border-white/30 text-gray-800 font-medium backdrop-blur-md flex items-center gap-2 transition-all hover:scale-110 group-hover:bg-white/40">
+              <img src="https://cdn.simpleicons.org/laravel/FF2D20" class="w-4 h-4" /> Laravel
             </li>
           </ul>
         </div>
-        <div class="flex justify-center items-center">
-          <img src="/assets/7b204194-90c5-48cd-81ae-557190d2502b-BcTpyCgi.jpg" alt="profile" class="w-100 h-90 md:w-90 md:h-90 object-cover rounded-3xl shadow-xl border border-white/20
-                        transition-all duration-500 hover:scale-105 hover:shadow-2xl" />
+
+        <div v-reveal class="relative transition-all duration-1000 delay-300">
+          <img src="/assets/7b204194-90c5-48cd-81ae-557190d2502b-BcTpyCgi.jpg" alt="profile" class="w-64 h-64 md:w-80 md:h-80 object-cover rounded-3xl shadow-2xl border border-white/30 transition-transform duration-500 hover:scale-105" />
         </div>
       </div>
     </div>
-  </div>
-  <div class="container-full pt-20 pb-50 bg-linear-to-t from-zinc-900 to-gray-900 py-10 mx-auto px-10">
-    <div class="container mx-auto">
-      <div class="flex flex-col lg:flex-row gap-25 justify-self-center relative z-3 relative">
-        <div class="text-white ">
-          <div>
-            <h2 class="text-3xl font-bold text-center capitalize">who i am ?</h2>
-            <div
-              class="max-w-lg mt-5 p-10 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20
-                    shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-500
-                    hover:scale-[1.04] hover:shadow-[0_12px_40px_rgba(0,0,0,0.18)]  text-[#ffffffa3] hover:text-white transition-all duration-500 text-[#ffffffa3]">
-              <p>I’m a motivated and detail-oriented software developer with hands-on experience in building dynamic web
-                applications.
-                Skilled in both frontend and backend technologies such as Vue, JavaScript, PHP (Laravel), Java (Spring
-                Boot), and MySQL,
-                I strive to create user-friendly, efficient, and scalable digital solutions. <br> <br>
-                I’ve collaborated with clients on e-commerce projects, applying modern frameworks and best practices to
-                deliver clean, responsive designs. <br> <br>
-                Beyond coding, I enjoy learning emerging technologies, exploring design tools like Figma, and
-                continuously improving my technical and problem-solving skills.
-                I’m passionate about growth, teamwork, and contributing to projects that make a real impact in the tech
-                community. </p>
+
+    <div class="bg-gradient-to-b from-gray-900 to-zinc-950 py-20 px-6 md:px-10">
+      <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 relative">
+        <div class="space-y-12">
+          <div v-reveal>
+            <h2 class="text-3xl font-bold text-white mb-6">Who I Am?</h2>
+            <div class="p-8 rounded-3xl bg-white/5 backdrop-blur-lg border border-white/10 text-gray-300 hover:text-white transition-all duration-300">
+              <p class="leading-relaxed">I’m a motivated and detail-oriented software developer with hands-on experience in building dynamic web applications. Skilled in <strong>Vue, JavaScript, PHP (Laravel), Java (Spring Boot), and MySQL</strong>.</p>
             </div>
           </div>
-          <!-- education  -->
-          <div class="mt-10 relative z-3">
-            <h2 class="text-3xl font-bold text-center capitalize">education</h2>
-            <div
-              class="max-w-lg mt-5 p-10 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20
-                      shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-500
-                      hover:scale-[1.04] hover:shadow-[0_12px_40px_rgba(0,0,0,0.18)] text-[#ffffffa3] hover:text-white transition-all duration-500 text-[#ffffffa3]">
 
-              <p>bachelor science in information technology</p>
-              <span>ACLC College of Mandaue • 2024 - 2025 (Present)</span>
+          <div v-reveal>
+            <h2 class="text-3xl font-bold text-white mb-6">Education</h2>
+            <div class="p-8 rounded-3xl bg-white/5 backdrop-blur-lg border border-white/10 text-gray-300 hover:text-white transition-all duration-300">
+              <p class="font-bold uppercase text-white">Bachelor of Science in Information Technology</p>
+              <span class="text-sm opacity-80">ACLC College of Mandaue • 2024 - 2025 (Present)</span>
             </div>
-
-          </div>
-          <!-- display  -->
-          <div
-            class="text-center w-100 absolute top-320 right-20 z-[1] scale-[0.90] text-center sm:scale-[1.20] lg:scale-[1.30] md:scale-[1.05] sm:left-[50px] sm:top-130 md:left-[60px] md:top-130 lg:left-[60px] transition-transform-all duration-500">
-            <Earth />
           </div>
         </div>
-        <div class="text-white z-2">
-          <h2 class="capitalize text-center text-3xl font-bold text-center capitalize">experience</h2>
-          <div v-for="index in ARR_EXPERIENCE" :key="index"
-            class="max-w-lg mt-5 p-5 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20
-                        shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-all duration-500
-                        hover:scale-[1.04] hover:shadow-[0_12px_40px_rgba(0,0,0,0.18)] text-[#ffffffa3] hover:text-white transition-all duration-500 text-[#ffffffa3]">
-            <h3>{{ index[0] }}</h3>
-            <span class="py-1">{{ index[1] }}</span>
-            <p class="text-medium mt-1">
-              {{ index[2] }}
-            </p>
+
+        <div class="space-y-6">
+          <h2 class="text-3xl font-bold text-white mb-6 text-center lg:text-left">Experience</h2>
+          <div v-for="(exp, index) in EXPERIENCES" :key="index"
+            v-reveal
+            class="p-6 rounded-2xl bg-white/5 border border-white/10 text-gray-400 hover:text-white hover:scale-[1.02] transition-all duration-500"
+            :style="{ transitionDelay: `${index * 100}ms` }">
+            <h3 class="text-white font-bold text-lg">{{ exp.role }}</h3>
+            <span class="text-sm text-blue-400 block mb-2">{{ exp.date }}</span>
+            <p class="text-sm leading-relaxed">{{ exp.desc }}</p>
+          </div>
+        </div>
+
+        <div class="absolute inset-0 pointer-events-none flex justify-center items-center opacity-20 lg:opacity-40 animate-pulse">
+            <Earth class="scale-150" />
+        </div>
+      </div>
+
+      <div class="mt-32 container mx-auto">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+          <div class="lg:w-1/2 text-white transition-all duration-1000 delay-[1.5s]" :class="isVisible ? 'opacity-100' : 'opacity-0'">
+            <h2 class="text-3xl font-bold mb-6">Technology & Tools</h2>
+            <div class="p-8 rounded-3xl bg-white/5 border border-white/10 text-gray-300" v-reveal>
+              <p>These are the tools I often use. I am continuously learning and improving my skills with these technologies based on project requirements.</p>
+            </div>
+          </div>
+
+          <div class="lg:w-1/2 grid grid-cols-3 gap-4 md:gap-6">
+              <div v-for="(tech, i) in TECH_STACK" :key="i"
+                v-reveal
+                class="group h-24 md:h-28 flex flex-col items-center justify-center bg-white/5 rounded-2xl border border-white/10 hover:bg-white/10 transition-all duration-500 transform"
+                :style="{ transitionDelay: `${i * 50}ms` }">
+                <img :src="tech.icon" :alt="tech.name" class="w-8 h-8 mb-2 transition-transform group-hover:scale-110 group-hover:rotate-6" />
+                <span class="text-[10px] text-gray-400 font-bold uppercase tracking-widest group-hover:text-white">{{ tech.name }}</span>
+              </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
+    </div>
+
+
+
+  </section>
 </template>
+
+<style scoped>
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[style*="transition-delay"] {
+  transition-property: all;
+}
+</style>

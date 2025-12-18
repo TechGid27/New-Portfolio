@@ -16,6 +16,7 @@ import UnderDeveloped from './components/UnderDeveloped.vue';
     <StContent />
     <AboutComponent />
     <UnderDeveloped />
+
   </div>
 
 
