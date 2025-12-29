@@ -9,4 +9,7 @@
   section {
     @apply scroll-mt-24;
   }
+  .smoothSwiper .swiper-wrapper {
+    transition-timing-function: linear !important;
+  }
 }

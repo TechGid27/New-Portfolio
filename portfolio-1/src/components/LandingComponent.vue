@@ -23,7 +23,7 @@ onMounted(() => {
         </h1>
 
         <p class="text-gray-300 text-[22px] mt-4 delay-200 animate-slide-up">
-          I’m an <span class="text-white font-medium italic">Aspiring Full Stack Developer</span>
+          I’m an <span class="text-white font-medium italic">Full Stack Developer</span>
         </p>
 
         <div class="mt-8 delay-500 animate-slide-up opacity-0 [animation-fill-mode:forwards]">

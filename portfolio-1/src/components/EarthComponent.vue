@@ -26,13 +26,11 @@ container.value.appendChild(renderer.domElement);
 
   const loader = new THREE.TextureLoader();
 
-  // ===== OFFICIAL THREE.JS TEXTURES (WORKING 100%) =====
   const earthDay = loader.load("https://threejs.org/examples/textures/planets/earth_atmos_2048.jpg");
   const earthNight = loader.load("https://threejs.org/examples/textures/planets/earth_lights_2048.png");
   const earthNormal = loader.load("https://threejs.org/examples/textures/planets/earth_normal_2048.jpg");
   const earthSpecular = loader.load("https://threejs.org/examples/textures/planets/earth_specular_2048.jpg");
   const cloudsMap = loader.load("https://threejs.org/examples/textures/planets/earth_clouds_1024.png");
-  // const stars = loader.load("https://threejs.org/examples/textures/galaxy_starfield.png");
 
   // ===== Earth =====
   const earth = new THREE.Mesh(

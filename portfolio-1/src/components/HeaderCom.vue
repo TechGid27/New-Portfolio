@@ -38,9 +38,9 @@ onUnmounted(() => {
     >
       <div class="flex justify-between items-center">
         <a href="#" class="group flex items-center gap-2">
-          <div class="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center font-bold text-white group-hover:rotate-12 transition-transform">G</div>
+          <div class="w-8 h-8 bg-gradient-to-r from-red-500 to-orange-400 rounded-lg flex items-center justify-center font-bold text-white group-hover:rotate-12 transition-transform">G</div>
           <span class="text-xl font-bold tracking-tight text-white group-hover:text-red-500 transition-colors">
-            Gideon <span class="text-red-500">Ayao</span>
+            Gideon <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400">Ayao</span>
           </span>
         </a>
 

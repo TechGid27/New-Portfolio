@@ -25,9 +25,10 @@ const TECH_STACK = [
   { name: "PHP", icon: "https://svgl.app/library/php.svg" },
   { name: "Java", icon: "https://svgl.app/library/java.svg" },
   { name: "Spring Boot", icon: "https://svgl.app/library/spring.svg" },
-  { name: "MySQL", icon: "https://svgl.app/library/mysql.svg" },
+  { name: "MySQL", icon: "https://upload.wikimedia.org/wikipedia/commons/e/e2/MySQL_textlogo.svg" },
   { name: "Figma", icon: "https://svgl.app/library/figma.svg" },
-  { name: "Tailwind CSS", icon: "https://svgl.app/library/tailwindcss.svg" }
+  { name: "Tailwind CSS", icon: "https://svgl.app/library/tailwindcss.svg" },
+  { name: "Firebase", icon: "https://upload.wikimedia.org/wikipedia/commons/4/45/Firebase_icon.svg"}
 ];
 
 const vReveal = {
@@ -47,13 +48,13 @@ const vReveal = {
 
 <template>
   <section class="relative overflow-hidden">
-    <div id="about" class="w-full px-6 md:px-10 pt-20 pb-16 bg-[url('/assets/background-luxury-minimalist-gradient-style-design_698780-702.jpg')] bg-cover bg-center brightness-95">
+    <div id="about" class="w-full h-full px-6 md:px-10 pt-20 pb-16 bg-[url('/assets/background-luxury-minimalist-gradient-style-design_698780-702.jpg')] bg-cover bg-center brightness-95">
       <div v-reveal class="text-center mb-12">
         <h1 class="text-2xl font-bold uppercase tracking-widest text-gray-800">About Me</h1>
       </div>
 
       <div class="flex flex-col-reverse items-center md:flex-row justify-center gap-12 lg:gap-24">
-        <div v-reveal class="group max-w-lg p-8 md:p-10 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20 shadow-xl transition-all duration-700 hover:scale-[1.02]">
+        <div v-reveal class="group max-w-lg p-8 md:p-10 rounded-3xl bg-[#afb3bb91] backdrop-blur-xl border border-white/20 shadow-xl transition-all duration-700 hover:scale-[1.02]">
           <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight transition-colors group-hover:text-black">Gideon Ayao</h1>
           <p class="mt-3 text-gray-700 text-lg leading-relaxed transition-colors group-hover:text-blue-700">Bachelor of Science in Information Technology</p>
           <span class="mt-1 block text-gray-600 text-sm font-medium group-hover:text-red-600">Cebu, Philippines</span>
@@ -82,7 +83,7 @@ const vReveal = {
           <div v-reveal>
             <h2 class="text-3xl font-bold text-white mb-6">Who I Am?</h2>
             <div class="p-8 rounded-3xl bg-white/5 backdrop-blur-lg border border-white/10 text-gray-300 hover:text-white transition-all duration-300">
-              <p class="leading-relaxed">I’m a motivated and detail-oriented software developer with hands-on experience in building dynamic web applications. Skilled in <strong>Vue, JavaScript, PHP (Laravel), Java (Spring Boot), and MySQL</strong>.</p>
+              <p class="leading-relaxed">I’m a motivated, detail-oriented aspiring software developer, focusing on web development with hands-on experience creating dynamic applications using <strong>Vue, JavaScript, PHP (Laravel), Java (Spring Boot), and MySQL</strong>.</p>
             </div>
           </div>
 
@@ -107,36 +108,13 @@ const vReveal = {
           </div>
         </div>
 
-        <div class="absolute inset-0 pointer-events-none flex justify-center items-center opacity-20 lg:opacity-40 animate-pulse">
+        <div class="absolute inset-0 pointer-events-none flex justify-center items-center opacity-20 lg:opacity-35 animate-pulse z-0">
             <Earth class="scale-150" />
         </div>
       </div>
 
-      <div id="skills" class="pt-32 container mx-auto">
-        <div  class="flex flex-col lg:flex-row items-center gap-12">
-          <div class="lg:w-1/2 text-white transition-all duration-1000 delay-[1.5s]" :class="isVisible ? 'opacity-100' : 'opacity-0'">
-            <h2 class="text-3xl font-bold mb-6">Technology & Tools</h2>
-            <div class="p-8 rounded-3xl bg-white/5 border border-white/10 text-gray-300" v-reveal>
-              <p>These are the tools I often use. I am continuously learning and improving my skills with these technologies based on project requirements.</p>
-            </div>
-          </div>
-
-          <div class="lg:w-1/2 grid grid-cols-3 gap-4 md:gap-6">
-              <div v-for="(tech, i) in TECH_STACK" :key="i"
-                v-reveal
-                class="group h-24 md:h-28 flex flex-col items-center justify-center bg-white/5 rounded-2xl border border-white/10 hover:bg-white/10 transition-all duration-500 transform"
-                :style="{ transitionDelay: `${i * 50}ms` }">
-                <img :src="tech.icon" :alt="tech.name" class="w-8 h-8 mb-2 transition-transform group-hover:scale-110 group-hover:rotate-6" />
-                <span class="text-[10px] text-gray-400 font-bold uppercase tracking-widest group-hover:text-white">{{ tech.name }}</span>
-              </div>
-          </div>
-        </div>
-      </div>
 
     </div>
-
-
-
   </section>
 </template>
 
