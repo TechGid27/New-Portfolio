@@ -34,31 +34,41 @@ const vReveal = {
 
 <template>
   <section class="relative overflow-hidden">
-    <div id="about" class="w-full h-full px-6 md:px-10 pt-20 pb-16 bg-[url('/assets/background-luxury-minimalist-gradient-style-design_698780-702.jpg')] bg-cover bg-center brightness-95">
+    <div id="about"
+      class="w-full h-full px-6 md:px-10 pt-20 pb-16 bg-[url('/assets/background-luxury-minimalist-gradient-style-design_698780-702.jpg')] bg-cover bg-center brightness-95">
       <div v-reveal class="text-center mb-12">
         <h1 class="text-2xl font-bold uppercase tracking-widest text-gray-800">About Me</h1>
       </div>
 
       <div class="flex flex-col-reverse items-center md:flex-row justify-center gap-12 lg:gap-24">
-        <div v-reveal class="group max-w-lg p-8 md:p-10 rounded-3xl bg-gray-900 backdrop-blur-xl border border-white/20 shadow-xl transition-all duration-700 hover:scale-[1.02]">
-          <h1 class="text-4xl font-extrabold text-gray-200 tracking-tight transition-colors group-hover:text-white">Gideon Ayao</h1>
-          <p class="mt-3 text-gray-300 text-lg leading-relaxed transition-colors group-hover:text-blue-100">Bachelor of Science in Information Technology</p>
+        <div v-reveal
+          class="group max-w-lg p-8 md:p-10 rounded-3xl bg-gray-900 backdrop-blur-xl border border-white/20 shadow-xl transition-all duration-700 hover:scale-[1.02]">
+          <h1 class="text-4xl font-extrabold text-gray-200 tracking-tight transition-colors group-hover:text-white">
+            Gideon Ayao</h1>
+          <p class="mt-3 text-gray-300 text-lg leading-relaxed transition-colors group-hover:text-blue-100">Bachelor of
+            Science in Information Technology</p>
           <span class="mt-1 block text-gray-300 text-sm font-medium group-hover:text-red-600">Cebu, Philippines</span>
-          <p class="mt-6 text-gray-300 italic leading-relaxed text-[15px]">"I believe that a positive attitude, strong skills, and a commitment to continuous learning are more valuable than the number of years worked."</p>
+          <p class="mt-6 text-gray-300 italic leading-relaxed text-[15px]">"I believe that a positive attitude, strong
+            skills, and a commitment to continuous learning are more valuable than the number of years worked."</p>
 
-          <h4 class="mt-8 text-gray-300 font-bold text-xl uppercase tracking-wide group-hover:text-red-500 transition-colors">Current Focus</h4>
+          <h4
+            class="mt-8 text-gray-300 font-bold text-xl uppercase tracking-wide group-hover:text-red-500 transition-colors">
+            Current Focus</h4>
           <ul class="flex gap-4 mt-4">
-            <li class="px-6 py-2 rounded-xl bg-zinc-800 text-white font-medium flex items-center gap-2 transition-all hover:scale-110 group-hover:bg-green-600">
+            <li
+              class="px-6 py-2 rounded-xl bg-zinc-800 text-white font-medium flex items-center gap-2 transition-all hover:scale-110 group-hover:bg-green-600">
               <img src="https://cdn.simpleicons.org/vuedotjs/white" class="w-4 h-4" /> Vue.js
             </li>
-            <li class="px-6 py-2 rounded-xl bg-white/20 border border-white/30 text-gray-800 font-medium backdrop-blur-md flex items-center gap-2 transition-all hover:scale-110 group-hover:bg-white/40">
+            <li
+              class="px-6 py-2 rounded-xl bg-white/20 border border-white/30 text-gray-800 font-medium backdrop-blur-md flex items-center gap-2 transition-all hover:scale-110 group-hover:bg-white/40">
               <img src="https://cdn.simpleicons.org/laravel/FF2D20" class="w-4 h-4" /> Laravel
             </li>
           </ul>
         </div>
 
         <div v-reveal class="relative transition-all duration-1000 delay-300">
-          <img src="/assets/7b204194-90c5-48cd-81ae-557190d2502b-BcTpyCgi.jpg" alt="profile" class="w-64 h-64 md:w-80 md:h-80 object-cover rounded-3xl shadow-2xl border border-white/30 transition-transform duration-500 hover:scale-105" />
+          <img src="/assets/7b204194-90c5-48cd-81ae-557190d2502b-BcTpyCgi.jpg" alt="profile"
+            class="w-64 h-64 md:w-80 md:h-80 object-cover rounded-3xl shadow-2xl border border-white/30 transition-transform duration-500 hover:scale-105" />
         </div>
       </div>
     </div>
@@ -68,14 +78,18 @@ const vReveal = {
         <div class="space-y-12">
           <div v-reveal>
             <h2 class="text-3xl font-bold text-white mb-6">Who I Am?</h2>
-            <div class="p-8 rounded-3xl bg-white/5 backdrop-blur-lg border border-white/10 text-gray-300 hover:text-white transition-all duration-300">
-              <p class="leading-relaxed">I’m a motivated, detail-oriented aspiring software developer, focusing on web development with hands-on experience creating dynamic applications using <strong>Vue, JavaScript, PHP (Laravel), Java (Spring Boot), and MySQL</strong>.</p>
+            <div
+              class="p-8 rounded-3xl bg-white/5 backdrop-blur-lg border border-white/10 text-gray-300 hover:text-white transition-all duration-300">
+              <p class="leading-relaxed">I’m a motivated, detail-oriented aspiring software developer, focusing on web
+                development with hands-on experience creating dynamic applications using <strong>Vue, JavaScript, PHP
+                  (Laravel), Java (Spring Boot), and MySQL</strong>.</p>
             </div>
           </div>
 
           <div v-reveal>
             <h2 class="text-3xl font-bold text-white mb-6">Education</h2>
-            <div class="p-8 rounded-3xl bg-white/5 backdrop-blur-lg border border-white/10 text-gray-300 hover:text-white transition-all duration-300">
+            <div
+              class="p-8 rounded-3xl bg-white/5 backdrop-blur-lg border border-white/10 text-gray-300 hover:text-white transition-all duration-300">
               <p class="font-bold uppercase text-white">Bachelor of Science in Information Technology</p>
               <span class="text-sm opacity-80">ACLC College of Mandaue • 2024 - 2025 (Present)</span>
             </div>
@@ -84,8 +98,7 @@ const vReveal = {
 
         <div class="space-y-6">
           <h2 class="text-3xl font-bold text-white mb-6 text-center lg:text-left">Experience</h2>
-          <div v-for="(exp, index) in EXPERIENCES" :key="index"
-            v-reveal
+          <div v-for="(exp, index) in EXPERIENCES" :key="index" v-reveal
             class="p-6 rounded-2xl bg-white/5 border border-white/10 text-gray-400 hover:text-white hover:scale-[1.02] transition-all duration-500"
             :style="{ transitionDelay: `${index * 100}ms` }">
             <h3 class="text-white font-bold text-lg">{{ exp.role }}</h3>
@@ -94,8 +107,9 @@ const vReveal = {
           </div>
         </div>
 
-        <div class="absolute inset-0 pointer-events-none flex justify-center items-center opacity-20 lg:opacity-35 animate-pulse z-0">
-            <Earth class="scale-150" />
+        <div
+          class="absolute inset-0 pointer-events-none flex justify-center items-center opacity-20 lg:opacity-35 animate-pulse z-0">
+          <Earth class="scale-150" />
         </div>
       </div>
 
