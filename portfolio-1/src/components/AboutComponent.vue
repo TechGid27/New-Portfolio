@@ -17,20 +17,6 @@ const EXPERIENCES = [
   { role: "🎨 Frontend Developer", date: "2022-2023", desc: "Designed and built engaging, responsive user interfaces with a focus on UX/UI." }
 ];
 
-
-const TECH_STACK = [
-  { name: "Vue.js", icon: "https://svgl.app/library/vue.svg" },
-  { name: "JavaScript", icon: "https://svgl.app/library/javascript.svg" },
-  { name: "Laravel", icon: "https://svgl.app/library/laravel.svg" },
-  { name: "PHP", icon: "https://svgl.app/library/php.svg" },
-  { name: "Java", icon: "https://svgl.app/library/java.svg" },
-  { name: "Spring Boot", icon: "https://svgl.app/library/spring.svg" },
-  { name: "MySQL", icon: "https://upload.wikimedia.org/wikipedia/commons/e/e2/MySQL_textlogo.svg" },
-  { name: "Figma", icon: "https://svgl.app/library/figma.svg" },
-  { name: "Tailwind CSS", icon: "https://svgl.app/library/tailwindcss.svg" },
-  { name: "Firebase", icon: "https://upload.wikimedia.org/wikipedia/commons/4/45/Firebase_icon.svg"}
-];
-
 const vReveal = {
   mounted: (el) => {
     el.classList.add('reveal-hidden');
