@@ -54,13 +54,13 @@ const vReveal = {
       </div>
 
       <div class="flex flex-col-reverse items-center md:flex-row justify-center gap-12 lg:gap-24">
-        <div v-reveal class="group max-w-lg p-8 md:p-10 rounded-3xl bg-[#afb3bb91] backdrop-blur-xl border border-white/20 shadow-xl transition-all duration-700 hover:scale-[1.02]">
-          <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight transition-colors group-hover:text-black">Gideon Ayao</h1>
-          <p class="mt-3 text-gray-700 text-lg leading-relaxed transition-colors group-hover:text-blue-700">Bachelor of Science in Information Technology</p>
-          <span class="mt-1 block text-gray-600 text-sm font-medium group-hover:text-red-600">Cebu, Philippines</span>
-          <p class="mt-6 text-gray-700 italic leading-relaxed text-[15px]">"I believe that a positive attitude, strong skills, and a commitment to continuous learning are more valuable than the number of years worked."</p>
+        <div v-reveal class="group max-w-lg p-8 md:p-10 rounded-3xl bg-gray-900 backdrop-blur-xl border border-white/20 shadow-xl transition-all duration-700 hover:scale-[1.02]">
+          <h1 class="text-4xl font-extrabold text-gray-200 tracking-tight transition-colors group-hover:text-white">Gideon Ayao</h1>
+          <p class="mt-3 text-gray-300 text-lg leading-relaxed transition-colors group-hover:text-blue-100">Bachelor of Science in Information Technology</p>
+          <span class="mt-1 block text-gray-300 text-sm font-medium group-hover:text-red-600">Cebu, Philippines</span>
+          <p class="mt-6 text-gray-300 italic leading-relaxed text-[15px]">"I believe that a positive attitude, strong skills, and a commitment to continuous learning are more valuable than the number of years worked."</p>
 
-          <h4 class="mt-8 text-gray-800 font-bold text-xl uppercase tracking-wide group-hover:text-red-700 transition-colors">Current Focus</h4>
+          <h4 class="mt-8 text-gray-300 font-bold text-xl uppercase tracking-wide group-hover:text-red-500 transition-colors">Current Focus</h4>
           <ul class="flex gap-4 mt-4">
             <li class="px-6 py-2 rounded-xl bg-zinc-800 text-white font-medium flex items-center gap-2 transition-all hover:scale-110 group-hover:bg-green-600">
               <img src="https://cdn.simpleicons.org/vuedotjs/white" class="w-4 h-4" /> Vue.js
@@ -77,8 +77,8 @@ const vReveal = {
       </div>
     </div>
 
-    <div class="bg-gradient-to-b from-gray-900 to-zinc-950 py-20 px-6 md:px-10">
-      <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 relative">
+    <div class="bg-gradient-to-b from-gray-900 to-zinc-950 py-20 ">
+      <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 relative px-10">
         <div class="space-y-12">
           <div v-reveal>
             <h2 class="text-3xl font-bold text-white mb-6">Who I Am?</h2>
