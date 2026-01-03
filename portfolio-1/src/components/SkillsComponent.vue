@@ -53,8 +53,8 @@ const modules = [Autoplay, FreeMode]
 
 <template>
   <div id="skills"
-    class="bg-[url('/assets/background-luxury-minimalist-gradient-style-design_698780-702.jpg')] bg-cover bg-center brightness-95 min-h-screen py-5">
-    <h2 class="text-2xl font-bold uppercase tracking-widest text-gray-800 text-center pt-20">Skills</h2>
+    class="bg-[url('/assets/background-luxury-minimalist-gradient-style-design_698780-702.jpg')] bg-cover bg-center brightness-95 min-h-screen py-20">
+    <h2 class="text-2xl font-bold uppercase tracking-widest text-gray-800 text-center mb-6">Skills</h2>
 
     <div class="mt-25">
       <Swiper :slides-per-view="2" :space-between="10" :loop="true" :speed="3500" :allow-touch-move="false" :autoplay="{
