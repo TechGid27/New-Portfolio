@@ -76,7 +76,7 @@ const modules = [Autoplay, FreeMode]
 
     <div class="container mx-auto px-10 mt-10">
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full place-items-center">
-        <div class="h-52 w-full bg-gray-900 rounded-3xl p-5 text-white">
+        <div class="min-h-52 w-full bg-gray-900 rounded-3xl p-5 text-white">
           <h2 class="pb-0 font-bold text-2xl">Front end Development</h2>
           <h4 class="text-gray-400 font-lighter"> {{ frontEndCount }} skills</h4>
           <hr class="mt-2">
