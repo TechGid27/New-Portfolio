@@ -47,7 +47,7 @@ const vReveal = {
             Gideon Ayao</h1>
           <p class="mt-3 text-gray-300 text-lg leading-relaxed transition-colors group-hover:text-blue-100">Bachelor of
             Science in Information Technology</p>
-          <span class="mt-1 block text-gray-300 text-sm font-medium group-hover:text-red-600">Cebu, Philippines</span>
+          <!-- <span class="mt-1 block text-gray-300 text-sm font-medium group-hover:text-red-600">Cebu, Philippines</span> -->
           <p class="mt-6 text-gray-300 italic leading-relaxed text-[15px]">"I believe that a positive attitude, strong
             skills, and a commitment to continuous learning are more valuable than the number of years worked."</p>
 

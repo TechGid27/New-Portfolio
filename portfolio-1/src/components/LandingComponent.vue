@@ -30,14 +30,16 @@ onMounted(() => {
         </p>
 
         <div class="mt-8 delay-500 animate-slide-up opacity-0 [animation-fill-mode:forwards]">
+
           <span
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-[#FF3838] shadow-xl backdrop-blur-sm">
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-green-500 shadow-xl backdrop-blur-sm">
             <span class="relative flex h-3 w-3">
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
               <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
             </span>
-            Cebu, Philippines
+              Available for work
           </span>
+
         </div>
       </div>
     </Transition>
