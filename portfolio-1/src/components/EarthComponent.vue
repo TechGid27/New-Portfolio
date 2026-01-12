@@ -79,19 +79,6 @@ container.value.appendChild(renderer.domElement);
 
   scene.add(new THREE.AmbientLight(0x222222));
 
-  // ===== Star Background =====
-  // const starField = new THREE.Mesh(
-  //   new THREE.SphereGeometry(80, 64, 64),
-  //   new THREE.MeshBasicMaterial({
-  //     map: stars,
-  //     side: THREE.BackSide
-  //   })
-  // );
-  // scene.add(starField);
-
-  // ===== Controls =====
-  // const controls = new THREE.OrbitControls(camera, renderer.domElement);
-  // controls.enableDamping = false;
 
   // ===== Animation =====
   const animate = () => {
@@ -103,12 +90,7 @@ container.value.appendChild(renderer.domElement);
   };
   animate();
 
-  // ===== Resize =====
-  // window.addEventListener("resize", () => {
-  //   camera.aspect = container.value.clientWidth / container.value.clientHeight;
-  //   camera.updateProjectionMatrix();
-  //   renderer.setSize(container.value.clientWidth, container.value.clientHeight);
-  // });
+
 });
 </script>
 
