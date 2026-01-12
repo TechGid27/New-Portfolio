@@ -8,6 +8,7 @@ import { computed } from 'vue'
 
 const TECH_STACK = [
   { name: "Vue.js", icon: "https://svgl.app/library/vue.svg", Categories: "Front-end" },
+  { name: "Three.js", icon: "https://svgl.app/library/threejs-light.svg", Categories: "Front-end" },
   { name: "JavaScript", icon: "https://svgl.app/library/javascript.svg", Categories: "Front-end" },
   { name: "Laravel", icon: "https://svgl.app/library/laravel.svg", Categories: "Back-end" },
   { name: "PHP", icon: "https://svgl.app/library/php.svg", Categories: "Back-end" },
