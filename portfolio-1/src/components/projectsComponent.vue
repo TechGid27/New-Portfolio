@@ -33,7 +33,8 @@ const project = [
       <div class="container mx-auto px-10">
         <h2 class="text-3xl font-bold text-white mb-6 text-center uppercase">Projects</h2>
 
-
+        <h2 class="text-3xl font-bold text-white">Features</h2>
+        <hr class="text-white mt-2 w-30 mb-10">
         <div class="grid md:grid-cols-2  grid-cols-1 w-full gap-10">
           <div v-for="projects in project.slice(0, 2)" :key="projects.name" class="group relative w-full rounded-xl overflow-hidden
          bg-white/10 backdrop-blur-lg border border-white/20

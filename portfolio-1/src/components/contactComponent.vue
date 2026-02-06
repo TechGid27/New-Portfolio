@@ -1,5 +1,9 @@
 <script setup>
 import AvatarComponent from './avatarComponent.vue'
+import { useEmailStore } from '../stores/email.js'
+
+const emailfun = useEmailStore();
+
 
 const contact = [
   { icons : "https://svgl.app/library/facebook-icon.svg",
@@ -58,22 +62,22 @@ const contact = [
 
           <div class="bg-[#0f172a] p-8 rounded-2xl border border-white/10 shadow-xl">
             <h2 class="text-3xl font-bold text-white mb-6 text-left uppercase">Contact Me</h2>
-            <form @submit.prevent="handleSubmit" class="space-y-5">
+            <form class="space-y-5" @submit.prevent="emailfun.sendEmail()">
               <div>
                 <label class="block text-sm font-medium text-gray-300 mb-2">Full Name</label>
-                <input type="text" placeholder="Your name"
+                <input type="text" required placeholder="Your name" v-model="emailfun.name"
                   class="w-full bg-[#1e293b] border border-gray-500 rounded-lg px-4 py-3 focus:outline-none focus:ring-1 focus:ring-white focus:border-transparent transition placeholder-gray-300 text-white" />
               </div>
 
               <div>
                 <label class="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
-                <input type="email" placeholder="email@example.com"
+                <input type="email" required placeholder="email@example.com" v-model="emailfun.email"
                   class="w-full bg-[#1e293b] border border-gray-500 rounded-lg px-4 py-3 focus:outline-none focus:ring-1 focus:ring-white focus:border-transparent transition placeholder-gray-300 text-white" />
               </div>
 
               <div>
                 <label class="block text-sm font-medium text-gray-300 mb-2">Message</label>
-                <textarea rows="4" placeholder="Tell me about your project..."
+                <textarea rows="4" required placeholder="Tell me about your project..." v-model="emailfun.message"
                   class="w-full bg-[#1e293b] border border-gray-500 rounded-lg px-4 py-3 focus:outline-none focus:ring-1 focus:ring-white focus:border-transparent transition placeholder-gray-300 text-white resize-none"></textarea>
               </div>
 
