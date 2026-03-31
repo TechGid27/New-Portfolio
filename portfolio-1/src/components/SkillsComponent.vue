@@ -28,7 +28,7 @@ const TECH_STACK = [
   { name: "Kotlin", icon: "https://svgl.app/library/kotlin.svg", Categories: "Back-end" },
   { name: "SQL Server Express", icon: "https://svgl.app/library/sql-server.svg", Categories: "database" },
   { name: "MS Access", icon: "https://svgl.app/library/microsoft-access.svg", Categories: "database" },
-  
+
 ];
 
 const frontEndCount = computed(() =>
@@ -59,8 +59,19 @@ const modules = [Autoplay, FreeMode]
 <template>
   <div id="skills"
     class="bg-[url('/assets/background-luxury-minimalist-gradient-style-design_698780-702.jpg')] bg-cover bg-center brightness-95 min-h-screen py-20">
-    <h2 class="text-2xl font-bold uppercase tracking-widest text-gray-800 text-center mb-6">Skills</h2>
+   <div v-reveal class="text-center mb-16 space-y-3">
+      <span class="text-xs md:text-sm font-black text-gray-900 uppercase tracking-[0.5em] block mb-2">
+        My Expertise
+      </span>
 
+      <h2 class="text-4xl md:text-6xl font-black text-black tracking-tighter transition-all hover:tracking-normal duration-700 cursor-default">
+        Skills
+      </h2>
+
+      <div class="flex justify-center pt-4">
+        <div class="h-px w-32 bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-30"></div>
+      </div>
+    </div>
     <div class="mt-25">
       <Swiper :slides-per-view="2" :space-between="10" :loop="true" :speed="3500" :allow-touch-move="false" :autoplay="{
         delay: 0,

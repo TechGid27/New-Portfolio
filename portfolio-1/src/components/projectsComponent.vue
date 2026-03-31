@@ -56,10 +56,26 @@ watch(isOpen, (val) => {
 </script>
 
 <template>
-  <div id="projects" class="min-h-screen bg-gradient-to-b from-gray-900 to-zinc-950 py-10 md:py-20">
-    <div class="container mx-auto px-6 md:px-10">
+      <div id="projects" class="min-h-screen bg-gradient-to-b from-gray-900 to-zinc-950 py-10 md:py-20">
+        <div class="container mx-auto px-6 md:px-10">
 
-      <h2 class="text-2xl md:text-3xl font-bold text-white mb-6 text-center uppercase tracking-widest">Portfolio</h2>
+          <div class="text-center space-y-4 mb-16">
+      <h2 class="text-xs md:text-sm font-black text-blue-500 uppercase tracking-[0.4em] mb-2">
+        Selected Works
+      </h2>
+
+      <h3 class="text-3xl md:text-5xl font-bold text-white tracking-tight">
+        Portfolio
+      </h3>
+
+      <p class="text-base md:text-lg bg-gradient-to-b from-zinc-200 to-zinc-500 bg-clip-text text-transparent font-medium max-w-xl mx-auto leading-relaxed">
+        Curating a collection of functional art, shifting from current solutions to the next generation of web experiences.
+      </p>
+
+      <div class="flex justify-center pt-6">
+        <div class="h-px w-24 bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-50"></div>
+      </div>
+    </div>
 
       <h2 class="text-2xl md:text-3xl font-bold text-white">Features</h2>
       <hr class="text-blue-500 mt-2 w-20 mb-10 border-t-4">

@@ -36,8 +36,18 @@ const vReveal = {
   <section class="relative overflow-hidden">
     <div id="about"
       class="w-full h-full px-6 md:px-10 pt-20 pb-16 bg-[url('/assets/background-luxury-minimalist-gradient-style-design_698780-702.jpg')] bg-cover bg-center brightness-95">
-      <div v-reveal class="text-center mb-12">
-        <h1 class="text-2xl font-bold uppercase tracking-widest text-gray-800">About Me</h1>
+      <div v-reveal class="text-center mb-16 space-y-3">
+        <span class="text-xs md:text-sm font-black text-gray-900 uppercase tracking-[0.4em] block mb-2">
+          Get to know me
+        </span>
+
+        <h2 class="text-4xl md:text-6xl font-black text-black tracking-tighter transition-all hover:tracking-normal duration-700 cursor-default">
+          About Me
+        </h2>
+
+        <div class="flex justify-center pt-4">
+          <div class="h-px w-24 bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-40"></div>
+        </div>
       </div>
 
       <div class="flex flex-col-reverse items-center md:flex-row justify-center gap-12 lg:gap-24">
