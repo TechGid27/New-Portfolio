@@ -57,7 +57,7 @@ const vReveal = {
           <ul class="flex gap-4 mt-4">
             <li
               class="px-6 py-2 rounded-xl bg-zinc-800 text-white font-medium flex items-center gap-2 transition-all hover:scale-110 group-hover:bg-green-600">
-              <img src="https://cdn.simpleicons.org/vuedotjs/white" class="w-4 h-4" /> Vue.js
+              <img src="https://svgl.app/library/kotlin.svg" class="w-4 h-4" /> Kotlin
             </li>
             <li
               class="px-6 py-2 rounded-xl bg-white/20 border border-white/30 text-gray-800 font-medium backdrop-blur-md flex items-center gap-2 transition-all hover:scale-110 group-hover:bg-white/40">

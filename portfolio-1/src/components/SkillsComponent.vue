@@ -24,7 +24,11 @@ const TECH_STACK = [
   { name: "N8n", icon: "https://svgl.app/library/n8n.svg", Categories: "AI automation" },
   { name: "bootstrap", icon: "https://svgl.app/library/bootstrap.svg", Categories: "Front-end" },
   { name: "html5", icon: "https://svgl.app/library/html5.svg", Categories: "Front-end" },
-  { name: "css3", icon: "https://svgl.app/library/css.svg", Categories: "Front-end" }
+  { name: "css3", icon: "https://svgl.app/library/css.svg", Categories: "Front-end" },
+  { name: "Kotlin", icon: "https://svgl.app/library/kotlin.svg", Categories: "Back-end" },
+  { name: "SQL Server Express", icon: "https://svgl.app/library/sql-server.svg", Categories: "database" },
+  { name: "MS Access", icon: "https://svgl.app/library/microsoft-access.svg", Categories: "database" },
+  
 ];
 
 const frontEndCount = computed(() =>
