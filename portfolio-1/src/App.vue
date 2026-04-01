@@ -7,6 +7,7 @@ import SkillsComponent from './components/SkillsComponent.vue';
 // import UnderDeveloped from './components/UnderDeveloped.vue';
 import ProjectsComponent from './components/projectsComponent.vue'
 import ContactComponent from './components/contactComponent.vue'
+import ToastComponent from './components/ToastComponent.vue';
 
 
 
@@ -21,7 +22,7 @@ import ContactComponent from './components/contactComponent.vue'
     <SkillsComponent />
     <ProjectsComponent />
     <ContactComponent />
-
+    <ToastComponent/>
 
   </div>
 

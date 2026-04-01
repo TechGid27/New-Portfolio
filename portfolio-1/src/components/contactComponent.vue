@@ -2,8 +2,7 @@
 import AvatarComponent from './avatarComponent.vue'
 import { useEmailStore } from '../stores/email.js'
 
-const emailfun = useEmailStore();
-
+const emailfun = useEmailStore()
 
 const contact = [
   { icons : "https://svgl.app/library/facebook-icon.svg",
@@ -82,18 +81,19 @@ const contact = [
               </div>
 
               <button
-  type="submit"
-  :disabled="emailfun.loading"
-  class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 rounded-lg shadow-lg flex justify-center items-center gap-2 transition active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed"
->
-  <svg v-if="emailfun.loading" class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
-  </svg>
-  {{ emailfun.loading ? 'Sending...' : 'Send Message' }}
-</button>
+                  type="submit"
+                  :disabled="emailfun.loading"
+                  class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 rounded-lg shadow-lg flex justify-center items-center gap-2 transition active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  <svg v-if="emailfun.loading" class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+                  </svg>
+                  {{ emailfun.loading ? 'Sending...' : 'Send Message' }}
+                </button>
             </form>
           </div>
+ 
 
         </div>
       </div>
