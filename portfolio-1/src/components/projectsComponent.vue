@@ -33,6 +33,14 @@ const project = [
     frontEnd: "XML",
     backEnd: "Kotlin",
     description: "This app is a coffee shop app that allows users to place orders and track their order status. It also allows users to view the menu and place orders."
+  },{
+    title: "Medical Procedure & Inventory System",
+    url : "Upcoming",
+    image: "/assets/Screenshot_7-4-2026_15426_127.0.0.1.jpeg",
+    frontEnd: "HTML(Blade), Bootstrap",
+    backEnd: "Laravel",
+    description: "I designed and developed a digital solution to address the challenges of manual clinic management at ACLC College of Mandaue. Before this system, the clinic faced issues like misplaced records, time-consuming searches, and late detection of out-of-stock medicines."
+
   }
 ]
 

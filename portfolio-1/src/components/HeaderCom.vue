@@ -27,7 +27,7 @@ onUnmounted(() => {
     isScrolled ? 'py-3' : 'py-6'
   ]">
     <div :class="[
-      'mx-auto max-w-6xl transition-all duration-500 rounded-2xl border border-white/10 flex flex-col',
+      'mx-auto max-w-[82.5%] transition-all duration-500 rounded-2xl border border-white/10 flex flex-col',
       isScrolled
         ? 'bg-gray-900/80 backdrop-blur-md shadow-lg px-6 py-3'
         : 'bg-transparent px-4 py-2'

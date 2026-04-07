@@ -26,7 +26,7 @@ const contact = [
         class="min-h-screen bg-[url('/assets/background-luxury-minimalist-gradient-style-design_698780-702.jpg')] bg-cover text-black flex items-center justify-center px-10 py-20">
 
         <div
-          class="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-[#1e293b]/50 p-10 rounded-3xl shadow-2xl border border-white/5">
+          class="max-w-[85%] w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-[#1e293b]/50 p-10 rounded-3xl shadow-2xl border border-white/5">
           <div class="space-y-6">
             <div>
               <h1
